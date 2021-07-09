@@ -87,7 +87,7 @@ def register():
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
-        db = get_db()
+        # db = get_db()
         error = None
 
         if not username:
@@ -119,7 +119,7 @@ def login():
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
-        db = get_db()
+        # db = get_db()
         error = None
         user = db.execute(
             "SELECT * FROM user WHERE username = ?", (username,)
