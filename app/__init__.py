@@ -1,6 +1,6 @@
 import os
-from flask import Flask, render_template, send_from_directory, request
-from dotenv import load_dotenv
+from flask import Flask, render_template, request
+from dotenv
 
 # from . import db
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -110,7 +110,7 @@ def register():
         else:
             return error, 418
 
-    ## TODO: Return a restister page
+    # TODO: Return a restister page
     return "Register Page not yet implemented", 501
 
 
@@ -135,5 +135,5 @@ def login():
         else:
             return error, 418
 
-    ## TODO: Return a login page
+    # TODO: Return a login page
     return "Login Page not yet implemented", 501
